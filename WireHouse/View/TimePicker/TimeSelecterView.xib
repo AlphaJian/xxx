@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TimeSelecterView" customModule="LarsonApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcf-Y6-NDE">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="NZO-Bi-v5r"/>
+                        <constraint firstAttribute="width" constant="150" id="sSx-W7-5jO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3LU-b5-8vV">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="EOp-ea-acc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="btnTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="0ih-a0-bCJ"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3d-7u-VAk">
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dlV-oK-Bfy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vcf-Y6-NDE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1Lv-U2-ORP"/>
+                <constraint firstItem="3LU-b5-8vV" firstAttribute="top" secondItem="Vcf-Y6-NDE" secondAttribute="bottom" id="4pw-z2-5yq"/>
+                <constraint firstItem="C3d-7u-VAk" firstAttribute="top" secondItem="3LU-b5-8vV" secondAttribute="bottom" id="E9e-X7-xYQ"/>
+                <constraint firstAttribute="trailing" secondItem="3LU-b5-8vV" secondAttribute="trailing" id="FHz-Dm-APW"/>
+                <constraint firstAttribute="trailing" secondItem="C3d-7u-VAk" secondAttribute="trailing" id="YIk-Wg-r98"/>
+                <constraint firstItem="3LU-b5-8vV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YNI-tN-BH8"/>
+                <constraint firstItem="C3d-7u-VAk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eKp-tX-HyF"/>
+                <constraint firstItem="Vcf-Y6-NDE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ohr-2p-EMU"/>
+            </constraints>
+            <connections>
+                <outlet property="timeBtn" destination="3LU-b5-8vV" id="mFq-bw-kgL"/>
+                <outlet property="titleLbl" destination="Vcf-Y6-NDE" id="sgQ-66-gBx"/>
+            </connections>
+        </view>
+    </objects>
+</document>
